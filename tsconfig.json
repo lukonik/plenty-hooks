@@ -5,6 +5,9 @@
   "references": [
     {
       "path": "./apps/plenty-hooks-docs"
+    },
+    {
+      "path": "./packages/plenty-hooks"
     }
   ]
 }
