@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react';
 import { beforeEach, describe, vi } from 'vitest';
-import { useInterval } from './use-interval';
+import { useInterval } from './useInterval';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 const mock = vi.fn((_param?: string) => {});
