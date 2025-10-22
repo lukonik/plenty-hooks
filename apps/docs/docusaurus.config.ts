@@ -5,7 +5,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Plenty Hooks',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -59,7 +59,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Plenty Hooks',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -67,7 +67,7 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'hooks',
           position: 'left',
           label: 'Docs',
         },
