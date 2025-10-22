@@ -1,1 +1,1 @@
-export * from './lib/plenty-hooks';
+export * from './lib/hooks/useInterval';
