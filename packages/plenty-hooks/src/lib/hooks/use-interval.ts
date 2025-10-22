@@ -1,5 +1,36 @@
 import { useCallback, useEffect, useRef } from 'react';
 
+/**
+ * React hook that schedules a repeated callback with `setInterval`.
+ *
+ * The interval is automatically cleaned up when the component unmounts. Passing `null` or
+ * `undefined` as the delay pauses the interval without removing the hook.
+ *
+ * @param cb Callback invoked on every interval tick.
+ * @param delay Delay between executions in milliseconds. Use `null` or `undefined` to pause the interval.
+ *
+ * @example
+ * ```tsx
+ * import { useState } from 'react';
+ *
+ * function Counter() {
+ *   const [count, setCount] = useState(0);
+ *   const [delay, setDelay] = useState<number | null>(null);
+ *
+ *   useInterval(() => {
+ *     setCount((current) => current + 1);
+ *   }, delay);
+ *
+ *   return (
+ *     <>
+ *       <span>{count}</span>
+ *       <button onClick={() => setDelay(1000)}>Start</button>
+ *       <button onClick={() => setDelay(null)}>Stop</button>
+ *     </>
+ *   );
+ * }
+ * ```
+ */
 export function useInterval(cb: () => void, delay: number | null | undefined) {
   const savedCb = useRef(cb);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
