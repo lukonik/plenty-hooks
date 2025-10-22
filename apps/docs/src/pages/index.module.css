@@ -3,21 +3,44 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
+.hero {
+  padding: 4rem 0 3rem;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  background: none;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  width: 110px;
+  height: auto;
+}
+
+.title {
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--ifm-font-color-secondary);
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+  .hero {
+    padding: 3rem 1rem 2.5rem;
   }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
