@@ -2,7 +2,9 @@
   "name": "@plenty-hooks/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "cd apps/docs && npm start"
+  },
   "private": true,
   "dependencies": {
     "react": "19.0.0",
