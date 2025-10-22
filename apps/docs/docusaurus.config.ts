@@ -55,6 +55,13 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    announcementBar: {
+      id: 'alpha-release',
+      content: 'Plenty Hooks is currently in alpha—APIs may change without notice.',
+      backgroundColor: '#f5a623',
+      textColor: '#091e42',
+      isCloseable: false,
+    },
     colorMode: {
       respectPrefersColorScheme: true,
     },

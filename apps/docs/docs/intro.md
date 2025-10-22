@@ -8,8 +8,6 @@ Welcome to Plenty Hooks — a lightweight collection of reusable React hooks foc
 
 ## Installation
 
-Install the package with the manager your project already uses:
-
 ```bash
 npm install plenty-hooks
 # or
@@ -20,34 +18,21 @@ yarn add plenty-hooks
 
 ## Quick Example
 
-The current release bundles a `useInterval` hook that lets you run a callback on a set cadence while keeping React state in sync. The interval automatically pauses when the component unmounts or when the delay becomes `null`.
-
 ```tsx
-import {useState} from 'react';
-import {useInterval} from 'plenty-hooks';
+import { useState } from 'react';
+import { useInterval } from 'plenty-hooks';
 
-export function Stopwatch() {
-  const [elapsed, setElapsed] = useState(0);
-  const [isRunning, setRunning] = useState(false);
+export function Ticker() {
+  const [seconds, setSeconds] = useState(0);
 
-  useInterval(
-    () => setElapsed((value) => value + 1),
-    isRunning ? 1000 : null,
-  );
+  useInterval(() => {
+    setSeconds((value) => value + 1);
+  }, 1000);
 
-  return (
-    <div>
-      <p>{elapsed}s</p>
-      <button onClick={() => setRunning(true)}>Start</button>
-      <button onClick={() => setRunning(false)}>Stop</button>
-      <button onClick={() => setElapsed(0)}>Reset</button>
-    </div>
-  );
+  return <p>Ticking for {seconds}s</p>;
 }
 ```
 
-## Next Steps
+## New Hook Feature
 
-- Browse the `hooks` directory for more utilities as they are added.
-- Check the package changelog to see new hooks as they land.
-- Contribute your own hooks by opening a pull request.
+If you want to have a new hook, create a feature request [on GitHub](https://github.com/lukonik/plenty-hooks/issues/new). 🚀
