@@ -6,7 +6,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 const config: Config = {
   title: 'Plenty Hooks',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'React Custom Hooks',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -14,16 +14,19 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  trailingSlash: false,
+
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://lukonik.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/plenty-hooks/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'lukonik', // Usually your GitHub org/user name.
+  projectName: 'plenty-hooks', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
 
@@ -43,7 +46,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/lukonik/plenty-hooks',
+          editUrl: 'https://github.com/lukonik/plenty-hooks/tree/main/apps/docs/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -57,7 +60,8 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     announcementBar: {
       id: 'alpha-release',
-      content: 'Plenty Hooks is currently in alpha—APIs may change without notice.',
+      content:
+        'Plenty Hooks is currently in alpha—APIs may change without notice.',
       backgroundColor: '#f5a623',
       textColor: '#091e42',
       isCloseable: false,
