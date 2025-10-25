@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "cd apps/docs && npm start"
+    "docs": "cd apps/docs && npm start",
+    "demo": "npx nx run demo:serve"
   },
   "private": true,
   "dependencies": {
