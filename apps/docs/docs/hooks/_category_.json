@@ -1,6 +1,7 @@
 {
   "label": "Hooks",
   "position": 2,
+  "collapsible": false,
   "link": {
     "type": "generated-index",
     "description": "Plenty of hooks"
