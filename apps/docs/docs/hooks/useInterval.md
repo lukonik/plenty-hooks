@@ -47,8 +47,6 @@ The hook does not return a value. Cleanup is handled automatically when the comp
 
 ## Source
 
-The hook is self-isolated—you can copy this snippet into your project and it will work out of the box.
-
 ```ts
 import { useCallback, useEffect, useRef } from 'react';
 
