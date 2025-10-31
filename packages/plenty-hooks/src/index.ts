@@ -1,3 +1,5 @@
+
+export * from './lib/hooks/useCopyToClipboard/useCopyToClipboard';
 export * from './lib/hooks/useEventListener/useEventListener';
 export * from './lib/hooks/useInterval/useInterval';
 export * from './lib/hooks/useMount/useMount';
